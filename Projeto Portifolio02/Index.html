@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+    
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <h1><center>Charlie Brown Jr.</center></h1>
+    <form action="Cadastro.php" method="get" autocomplete="on">
+        <h4>
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text"  name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="idata">Data Nascimento</label>
+            <input type="number" name="Dia" id="idata" min="1" max="31" placeholder="Dia">
+            <select id="mes" name="Mes">
+            <option value=""> Mes</option>
+            <option value="01"> Janeiro</option>
+            <option value="02"> Fevereiro</option>
+            <option value="03"> Março</option>
+            <option value="04"> Abril</option>
+            <option value="05"> Maio</option>
+            <option value="06"> Junho</option>
+            <option value="07"> Julho</option>
+            <option value="08"> Agosto</option>
+            <option value="09"> Setembro</option>
+            <option value="10"> Outubro</option>
+            <option value="11"> Novembro</option>
+            <option value="12"> Dezembro</option>
+            <input type="number" name="Ano" id="idata" min="1900" max="2026" placeholder="Ano">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+    <div> <center><img src="./assets/cbjr.jpg"></center></div>
+        </h4>
+        <h2>
+    <div>
+        Historia
+    </div>
+
+    <div>
+       Shows
+    </div>
+
+    <div>
+        Integrantes
+    </div>
+
+     <div>
+        Cds
+    </div>
+
+     <div>
+        Musícas
+    </div>
+        </h2>
+</body>
+</html>

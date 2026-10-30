@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+
+  <style>
+    .foto-rosto {
+      width: 100px;
+      height: 100px;
+    }
+
+    .foto-pequena {
+      width: 200px;
+      height: 200px;
+    }
+
+    .foto-media {
+      width: 300px;
+      height: 300px;
+    }
+
+    .foto-proporcional {
+      width: auto;
+      height: auto;
+    }
+  </style>
+  <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+
+<body>
+  <!-- SCRIPT ANTI-FLASH: Executa imediatamente antes de renderizar a página -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        document.body.classList.add('dark-mode');
+      }
+    })();
+  </script>
+
+
+
+  <!-- Barra de Navegação principal -->
+  <nav class="navbar">
+    <div class="logo">Charlie Brown Jr.</div>
+
+    <!-- Lista com os 6 botões de navegação -->
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active">Início</a></li>
+      <li><a href="./historia-completa.html" class="not">História</a></li>
+      <li><a href="./integrantes.html" class="not">Integrantes</a></li>
+      <li><a href="./discografia.html" class="not">Discografia</a></li>
+      <li><a href="./musicas.html" class="not">Músicas</a></li>
+      <li><a href="#contato" class="not">Contato</a></li>
+
+      <header>
+        <!-- Botão de Alternância de Tema -->
+        <button id="theme-toggle" aria-label="Alternar tema">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </header>
+
+    </ul>
+  </nav>
+
+  <script src="./assets/script.js"></script>
+
+  <div class="container-fluid">
+    <div class="row">
+      <center><img src="./assets/cbjrlogo02.jpg" class="foto-proporcional" alt="Logo da banda"></center>
+    </div>
+
+
+<div class="card">
+  <img src="./assets/CD00.jpg" class="foto-pequena" alt="Todos os albuns da banda">
+
+  <div class="card-body">
+    <h5 class="card-title">Discografia</h5>
+    <p class="card-text">Clique aqui para conhecer a discografia completa</p>
+    <a href="./discografia.html" class="btn btn-primary">Bora lá</a>
+  </div>
+</div>
+
+<div class="card" aria-hidden="true">
+  <img src="./assets/Cbjr.jpg" class="foto-pequena" alt="Foto com todos os integrantes da banda">
+  <div class="card-body">
+    <h5 class="card-title placeholder-glow">
+      <span class="placeholder col-6"></span>
+    </h5>
+    <p class="card-text placeholder-glow">
+      <span class="placeholder col-7"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-6"></span>
+      <span class="placeholder col-8"></span>
+    </p>
+    <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+  </div>
+</div>
+
+
+
+
+
+
+    
+    <div class="row">
+      <center>
+        <br>
+        <h2>A Banda</h2>
+      </center>
+      <br>
+
+      <p>O Charlie Brown Jr. (CBJR) foi uma das bandas mais influentes do rock nacional das décadas de 1990 e 2000.
+        Fundada em Santos no ano de 1992, a banda misturou punk rock, skate punk, reggae, hip hop e hardcore,
+        criando um som próprio marcante e conectado com a juventude urbana.
+        Foi uma história de amizade, talento, skate, sonhos, conflitos, reconciliações e perdas. Por trás das canções
+        que marcaram gerações, existia um grupo de músicos que cresceu junto, conquistou o Brasil e enfrentou
+        dificuldades que acabaram mudando o destino da banda.
+
+        Vou contar a trajetória desde as origens em Santos até os acontecimentos que marcaram o fim da formação
+        original, distinguindo os fatos conhecidos das versões pessoais dos integrantes.
+
+
+    </div>
+    <div class="row">
+      <center>
+        <h2>Historia</h2>
+      </center>
+      <p>O Charlie Brown Jr. surgiu em Santos, em 1992, liderado pelo vocalista Chorão, nome artístico de Alexandre
+        Magno Abrão. Desde a adolescência, ele era apaixonado por skate e música, influências que marcaram sua
+        personalidade e o estilo da banda.
+
+        Chorão começou a cantar após uma oportunidade inesperada em um bar, quando substituiu o vocalista de um grupo.
+        Mais tarde, conheceu o baixista Champignon, com quem desenvolveu uma importante parceria musical. O nome Charlie
+        Brown Jr. surgiu após Chorão bater seu carro em uma barraca de água de coco que tinha a imagem do personagem
+        Charlie Brown. O “Jr.” representava a ideia de que os integrantes eram filhos do rock.
+
+        A banda começou tocando em pequenos eventos e campeonatos de skate. Em 1997, lançou seu primeiro álbum por uma
+        grande gravadora, Transpiração Contínua Prolongada, conquistando o público com músicas como “Proibida Pra Mim”,
+        “O Coro Vai Comê!” e “Tudo Que Ela Gosta de Escutar”.
+
+        Seu diferencial era a mistura de rock, hardcore, rap e reggae, com letras sobre amor, amizade, liberdade,
+        dificuldades pessoais e superação. Ao longo dos anos, o grupo lançou grandes sucessos, como “Zóio de Lula”, “Só
+        os Loucos Sabem”, “Dias de Luta, Dias de Glória” e “Céu Azul”.
+
+        A trajetória da banda foi marcada pela morte de Chorão, em março de 2013, e de Champignon, em setembro do mesmo
+        ano. O grupo encerrou suas atividades em 2013, mas suas músicas continuam conquistando novas gerações.
+
+        O legado do Charlie Brown Jr. está na capacidade de transformar experiências, sentimentos e conflitos em músicas
+        que representam a juventude, a liberdade e a busca por um lugar no mundo.
+        <br>
+      <ul class="nav-links">
+        <li><a href="./historia-completa.html" class="active">Saiba mais...</a></li>
+      </ul>
+
+    </div>
+    <div class="row">
+      <center>
+        <h2>Shows</h2>
+      </center>
+      <br>
+    </div>
+
+    <center>
+      <h2> Integrantes</h2>
+    </center>
+
+    <div>
+      <br>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h5>1992 - 2001</h5>
+      </div>
+
+      <div class="col">
+        <h5>2001 - 2005</h5>
+      </div>
+
+      <div class="col">
+        <h5>2005 - 2008</h5>
+      </div>
+
+      <div class="col">
+        <h5>2008 - 2011</h5>
+      </div>
+
+      <div class="col">
+        <h5>2011 - 2013</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col"><img src="./assets/cbjrint00.jpg" class="foto-pequena"
+          alt="Uma imagem da banda em sua formação original, Chorão, Champignon, Marcão, Thiago e Pelado"></div>
+      <div class="col"><img src="./assets/cbjrint01.jpg" class="foto-pequena"
+          alt="Uma imagem da banda, Chorão, Champignon, Marcão e Pelado"></div>
+      <div class="col"><img src="./assets/cbjrint02.jpg" class="foto-pequena"
+          alt="Uma imagem da banda, com a nova formação: Chorão, Thiago, Heitor e Pinguim"></div>
+      <div class="col"><img src="./assets/cbjrint03.jpg" class="foto-pequena"
+          alt="Uma imagem da banda, com a nova formação: Chorão, Thiago, Heitor e Graveto"></div>
+      <div class="col"><img src="./assets/cbjrint04.jpg" class="foto-pequena"
+          alt="Uma imagem da banda em sua ultima formação: Chorão, Champignon, Marcão, Thiago e Graveto"></div>
+    </div>
+
+    <div class="row">
+      <div class="col">Chorão - Vocalista
+        <br>Marcão Britto - Guitarrista
+        <br>Thiago Castanho - Guitarrista
+        <br>Champignon - Baixista
+        <br>Renato Pelado - baterista
+      </div>
+
+      <div class="col">Chorão - Vocalista
+        <br>Marcão Britto - Guitarrista
+        <br>Champignon - Baixista
+        <br>Renato Pelado - Baterista
+      </div>
+
+      <div class=" col">Chorão - Vocalista
+        <br>Thiago Castanho - Guitarrista
+        <br>Heitor Gomes - Baixista
+        <br>Pinguim - Baterista
+      </div>
+
+      <div class="col">Chorão - Vocalista
+        <br>Thiago Castanho - Guitarrista
+        <br>Heitor Gomes - Baixista
+        <br>Bruno Graveto - Baterista
+      </div>
+
+      <div class="col">Chorão - Vocalista
+        <br>Marcão Britto - Guitarrista
+        <br>Thiago Castanho - Guitarrista
+        <br>Champignon - Baixista
+        <br>Bruno Graveto - Baterista
+      </div>
+    </div>
+
+    <div>
+      <br>
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+        <img src="./assets/intchorao.jpg" class="foto-rosto" alt="Foto vocalista Chorão">
+      </div>
+
+      <div class="col">
+        <img src="./assets/intchamps.jpg" class="foto-rosto" alt="Foto baixista Champignon">
+      </div>
+
+      <div class="col">
+        <img src="./assets/intmarcao.jpg" class="foto-rosto" alt="Foto guitarrista Marcão">
+      </div>
+
+      <div class="col">
+        <img src="./assets/intthiago.jpg" class="foto-rosto" alt="Foto guitarrista Thiago">
+      </div>
+
+      <div class="col">
+        <img src="./assets/intpelado.jpg" class="foto-rosto" alt="Foto baterista Renato">
+      </div>
+
+      <div class="col">
+        <img src="./assets/intheitor.jpg" class="foto-rosto" alt="Foto baixista Heitor">
+      </div>
+
+      <div class="col">
+        <img src="./assets/intpinguim.jpg" class="foto-rosto" alt="Foto baterista Pinguim">
+      </div>
+
+      <div class="col">
+        <img src="./assets/intgraveto.jpg" class="foto-rosto" alt="Foto baterista Graveto"> –
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">Chorão<br> Vocalista</div>
+      <div class="col">Champignon <br>Baixista</div>
+      <div class="col">Marcão Britto<br>Guitarrista</div>
+      <div class="col">Thiago Castanho<br> Guitarrista</div>
+      <div class="col">Heitor Gomes <br>Baixista</div>
+      <div class="col">Renato Pelado <br> Baterista</div>
+      <div class="col">Pinguim <br>Baterista</div>
+      <div class="col"> Bruno Graveto <br>Baterista</div>
+
+    </div>
+    <br>
+    <ul class="nav-links">
+      <li><a href="./integrantes.html" class="active">Saiba mais...</a></li>
+    </ul>
+
+
+    <div>
+      <br>
+    </div>
+
+
+    <div class="row">
+      <center>
+        <h2>Discografia</h2>
+      </center>
+
+      Ao longo de sua trajetória musical, o grupo acumulou um vasto catálogo de lançamentos de grande sucesso
+      comercial e de crítica:
+      <div>
+        <br>
+      </div>
+
+      <center>
+        <h3>10 álbuns de estúdio:</h3>
+      </center>
+      <br>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/0GBMhUusSjw9soVbVFRERp" target="_blank">
+            <img src="./assets/cd01.jpg" class="foto-media" alt="Capa do album Transpiração Contínua Prolongada">
+          </a>
+        </div>
+
+        <div class="col">
+          <h5>Transpiração Contínua Prolongada (1997)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/2hLNxoJZ5kZoBEX0XGBRNu" target="_blank">
+            <img src="./assets/cd02.jpg" class="foto-media" alt="Capa do album Preço Curto... Prazo Longo">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Preço Curto... Prazo Longo (1999)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/5eF1HzO5mIQxs7bCwW9TJC" target="_blank">
+            <img src="./assets/cd03.jpg" class="foto-media" alt="Capa do album Nadando com os Tubarões">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Nadando com os Tubarões (2000)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/0Dcy3ThOh8LS1qhXUbZWH7" target="_blank">
+            <img src="./assets/cd04.jpg" class="foto-media"
+              alt="Capa do album 100% Charlie Brown Jr. - Abalando a sua Fábrica">
+          </a>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/1FsdTRaD7Ec15uKh71PhkE" target="_blank">
+            <img src="./assets/cd05.jpg" class="foto-media" alt="Capa do album Bocas Ordinárias">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Bocas Ordinárias (2002)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/6PsijYuoyIB4vgV5brmbhq" target="_blank">
+            <img src="./assets/cd06.jpg" class="foto-media" alt="Capa do album Tamo Ái na Atividade">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Tamo Ái na Atividade (2004)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/1l8K5fgYz4J0ZZyjMVd6Q1" target="_blank">
+            <img src="./assets/cd07.jpg" class="foto-media" alt="Capa do album Imunidade Musical">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Imunidade Musical (2005)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/0wHl2FK2AEhwIiYISv7cJ4" target="_blank">
+            <img src="./assets/cd08.jpg" class="foto-media" alt="Capa do album Ritmo, Ritual e Responsa">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Ritmo, Ritual e Responsa (2007)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/0tbiBipiOorOAnL7XWFbgt" target="_blank">
+            <img src="./assets/cd09.jpg" class="foto-media" alt="Capa do album Camisa 10 Joga Bola até na chuva">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Camisa 10 Joga Bola até na chuva (2009)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/53GOG940xY4LOpgD8YzQrJ" target="_blank">
+            <img src="./assets/cd10.jpg" class="foto-media" alt="Capa do album La Familia 013 (Póstumo)">
+          </a>
+        </div>
+        <div class="col">
+          <h5>La Familia 013 (Póstumo) (2013)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div>
+        <center>
+          <h3>3 álbuns ao vivo:</h3>
+        </center>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/0AFkktyrrPtQvpIBqpRrc7" target="_blank">
+            <img src="./assets/cd11.jpg" class="foto-media" alt="Capa do album Acústico MTV">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Acústico MTV (2003)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/4j8gmVMG1HM5oNyKRYNJWB" target="_blank">
+            <img src="./assets/cd12.jpg" class="foto-media" alt="Capa do album Música Popular Caiçara">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Música Popular Caiçara (2012)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/17Bgx3wXQinZnrCNWz1JWJ" target="_blank">
+            <img src="./assets/cd13.jpg" class="foto-media" alt="Capa do album Chegou Quem Faltava">
+          </a>
+        </div>
+        <div class="col">
+          <h5>Chegou Quem Faltava (Ao Vivo) (2021)</h5>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <br>
+          <a href="https://open.spotify.com/intl-pt/album/45PoyWpRU4scXnmtgSzZWa" target="_blank">
+            <img src="./assets/cd12A.jpg" class="foto-media" alt="Capa do album Música Popular Caiçara">
+          </a>
+        </div>
+        <div class="col">
+          <br>
+          <h5>Música Popular Caiçara (2016)</h5>
+          <h6> Volume 2</h6>
+        </div>
+      </div>
+
+      <div>
+        <br>
+      </div>
+
+      <h5>6 DVDs lançados:</h5>
+      Ao Vivo (2002)
+      <br>
+
+      Acústico MTV (2003)
+      <br>
+
+      Na Estrada (2004)
+      <br>
+
+      Vibration (2005)
+      <br>
+
+      Ritmo, Ritual e Responsa (2008)
+      <br>
+
+      Música Popular Caiçara (2012)
+      <br>
+
+      Chegou Quem Faltava (Ao Vivo) (2021)
+      <br>
+
+
+
+    </div>
+
+    <div>
+      <br>
+
+    </div>
+
+    <div class="row">
+      <h4> Musícas:</h4>
+    </div>
+
+    <div class="row">
+
+      <form action="Cadastro.php" method="get" autocomplete="on">
+
+        <label for="txtnome">Nome:</label>
+        <input type="text" name="nome" id="txtnome" required maxlength="30" placeholder="Nome completo"
+          autocomplete="name" required>
+        <br>
+
+
+        <label for="txtdata">Data Nascimento:</label>
+        <input type="number" name="Dia" id="txtdata" min="1" max="31" placeholder="Dia">
+        <select id="mes" name="Mes">
+          <option value=""> Mes</option>
+          <option value="01"> Janeiro</option>
+          <option value="02"> Fevereiro</option>
+          <option value="03"> Março</option>
+          <option value="04"> Abril</option>
+          <option value="05"> Maio</option>
+          <option value="06"> Junho</option>
+          <option value="07"> Julho</option>
+          <option value="08"> Agosto</option>
+          <option value="09"> Setembro</option>
+          <option value="10"> Outubro</option>
+          <option value="11"> Novembro</option>
+          <option value="12"> Dezembro</option>
+          <input type="number" name="Ano" id="txtdata" min="1900" max="2026" placeholder="Ano">
+          <br>
+
+
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+          <br>
+
+      </form>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+    
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <h1><center>Charlie Brown Jr.</center></h1>
+    <form action="Cadastro.php" method="get" autocomplete="on">
+        <h4>
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text"  name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="idata">Data Nascimento</label>
+            <input type="number" name="Dia" id="idata" min="1" max="31" placeholder="Dia">
+            <select id="mes" name="Mes">
+            <option value=""> Mes</option>
+            <option value="01"> Janeiro</option>
+            <option value="02"> Fevereiro</option>
+            <option value="03"> Março</option>
+            <option value="04"> Abril</option>
+            <option value="05"> Maio</option>
+            <option value="06"> Junho</option>
+            <option value="07"> Julho</option>
+            <option value="08"> Agosto</option>
+            <option value="09"> Setembro</option>
+            <option value="10"> Outubro</option>
+            <option value="11"> Novembro</option>
+            <option value="12"> Dezembro</option>
+            <input type="number" name="Ano" id="idata" min="1900" max="2026" placeholder="Ano">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+    <div> <center><img src="./assets/cbjr.jpg"></center></div>
+        </h4>
+        <h2>
+    <div>
+	A Banda
+	<h1>
+	O Charlie Brown Jr. (CBJR) foi uma das bandas mais influentes do rock nacional das décadas de 1990 e 2000. Fundada em Santos no ano de 1992, a banda misturou punk rock, skate punk, reggae, hip hop e hardcore, criando um som próprio marcante e conectado com a juventude urbana.
+
+     </h1>
+    </div>
+	
+        Historia
+         <h1>
+   
+ 
+    </div>
+
+    <div>
+       Shows
+    </div>
+
+    <div>
+        Integrantes
+<h1>
+*Formação Inicial e Origens*
+Ano de formação: 1992, na cidade de Santos (SP).
+
+Formação original:
+
+Chorão (Alexandre Magno Abrão) – Vocais (único integrante paulistano).
+
+Champignon (Luiz Carlos Leão Duarte Junior) – Baixo (natural de Santos).
+
+Marcão Britto – Guitarra (natural de Santos).
+
+Thiago Castanho – Guitarra (natural de Santos).
+
+Renato Pelado – Bateria (natural de Santos).
+</h1>
+    </div>
+
+     <div>
+        Discográfia
+	<h1>
+Ao longo de sua trajetória musical, o grupo acumulou um vasto catálogo de lançamentos de grande sucesso comercial e de crítica:
+
+*10 álbuns de estúdio:* 
+Transpiração Contínua Prolongada (1997)
+Preço Curto... Prazo Longo (1999)
+Nadando com os Tubarões (2000)
+100% Charlie Brown Jr. - A Abalando a sua Fábrica (2001)
+Bocas Ordinárias (2002)
+Tamo Ái na Atividade (2004)
+Imunidade Musical (2005)
+Ritmo, Ritual e Responsa (2007)
+Camisa 10 Joga Bola até na chuva (2009)
+La Familia 013 (Póstumo) (2013)
+
+*3 álbuns ao vivo:*
+Acústico MTV (2003)
+Música Popular Caiçara (2012)
+Chegou Quem Faltava (Ao Vivo) (2021)
+
+*6 DVDs lançados:*
+Ao Vivo (2002)
+Acústico MTV (2003)
+Na Estrada (2004)
+Vibration (2005)
+Ritmo, Ritual e Responsa (2008)
+Música Popular Caiçara (2012)
+Chegou Quem Faltava (Ao Vivo) (2021)
+
+
+    
+</div>
+
+     <div>
+        Musícas
+    </div>
+        </h2>
+</body>
+</html>

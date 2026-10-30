@@ -1,0 +1,134 @@
+/* ==========================================================================
+   1. Variáveis de Tema do Site
+   ========================================================================== */
+:root {
+    /* Tema Claro do Corpo */
+    --bg-primary: #ffffff;
+    --text-primary: #121212;
+
+    /* Tema Invertido para a Navbar (Barra Escura no Tema Claro) */
+    --bg-navbar: #1e1e1e;
+    --text-navbar: #f1f1f1;
+    --border-navbar: #333333;
+    --hover-navbar: rgba(255, 255, 255, 0.15);
+    --accent-navbar: #60a5fa;
+}
+
+body.dark-mode {
+    /* Tema Escuro do Corpo */
+    --bg-primary: #121212;
+    --text-primary: #f1f1f1;
+
+    /* Tema Invertido para a Navbar (Barra Clara no Tema Escuro) */
+    --bg-navbar: #f8f9fa;
+    --text-navbar: #121212;
+    --border-navbar: #e0e0e0;
+    --hover-navbar: rgba(0, 0, 0, 0.08);
+    --accent-navbar: #2563eb;
+}
+
+/* ==========================================================================
+   2. Estilos Globais
+   ========================================================================== */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================================================
+   3. Barra de Navegação Invertida
+   ========================================================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-navbar);
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--border-navbar);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-navbar);
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-navbar);
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: color 0.3s ease, background-color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-navbar);
+    background-color: var(--hover-navbar);
+}
+
+/* ==========================================================================
+   4. Botão de Tema (Invertido)
+   ========================================================================== */
+#theme-toggle {
+    background: transparent;
+    border: 2px solid var(--text-navbar);
+    color: var(--text-navbar);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.08);
+}
+
+#theme-icon {
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease;
+}
+
+#theme-icon.rotate {
+    transform: rotate(360deg) scale(0.2);
+    opacity: 0;
+}
+
+/* ==========================================================================
+   5. Botão Hambúrguer Mobile (Invertido)
+   ========================================================================== */
+.menu-toggle .bar {
+    background-color: var(--text-navbar);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: var(--bg-navbar);
+    }
+
+    .nav-links.active {
+        border-bottom: 1px solid var(--border-navbar);
+    }
+}
+nav-btn:hover:not(.active) {
+      background-color: #1565c0;
+    }
